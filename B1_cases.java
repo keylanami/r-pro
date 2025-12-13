@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class B01 {
+public class B1_cases {
     public static void main(String[] args) {
         Scanner adudu = new Scanner(System.in);
       //  soal 1

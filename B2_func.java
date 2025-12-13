@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class func {
+public class B2_func {
     public static void main(String[] args) {
         halo();
 

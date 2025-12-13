@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class loop {
+public class B2_Loop {
     public static void main(String[] args) {
         Scanner tokAbah = new Scanner(System.in);
         
