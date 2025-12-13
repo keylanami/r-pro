@@ -4,24 +4,22 @@ public class SCB3 {
     public static void main(String[] args) {
         Scanner hi = new Scanner(System.in);
         String kalimat = hi.nextLine();
-
+        String tambahan = hi.nextLine();
 
         String[] kata = kalimat.split(" ");
 
-        
+// BUAT NGECEK         
         for (int i = 0; i < kata.length; i++) {
-            if ((i + 1) % 2 == 1) {
+            if ((i + 1) % 2 == 0) {
                 kata[i] = balikKata(kata[i]);
             }
         }
 
-
+// BUAT NGEPRINT   
         for (int i = 0; i < kata.length; i++) {
-            System.out.print(kata[i] + " ");
+            System.out.print(kata[i] + tambahan + " ");
         }
     }
-
-
 
 
 

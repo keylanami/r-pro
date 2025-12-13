@@ -5,9 +5,20 @@ public class B3_searchExp {
     public static void main(String[] args) {
         Scanner hi = new Scanner(System.in);
         
-        String[] data = {"Volvo", "BMW", "Ford", "Mazda"};
-        System.out.println("ada di index: " +linearSearch(data, "BMW"));
+        // String[] data = {"Volvo", "BMW", "Ford", "Mazda"};
+
+        // if (linearSearch(data, "BMW") == -1) {
+        //     System.out.println("Gak ketemiu");
+        // } else {
+        //     System.out.println("ada di index: " + linearSearch(data, "BMW"));
+
+        // }
+
+
+
+
         int[] angka = {1, 4, 7, 9, 10, 16, 19, 25, 38};
+    
         int result = binarySearch(angka, hi.nextInt());
 
         if (result == -1) {

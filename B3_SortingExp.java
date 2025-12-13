@@ -3,14 +3,18 @@ import java.util.Scanner;
 public class B3_SortingExp {
     public static void main(String[] args) {
         Scanner hi = new Scanner(System.in);
-        int[] numbers = {4, 9, 10, 11, 32, 15, 3};
+        int[] numbers = {4, 9, 1, 5, 10, 11, 32, 15, 3};
+        int[] numberss = {4, 9, 1, 5, 10, 11, 32, 3};
         
-        BubbleSort(numbers);
 
+        BubbleSort(numbers);
+        BubbleSort(numberss);
+        
         System.out.println("DIURUTIN PAKE BUBBLE SORT");
         for (int i : numbers) {
             System.out.print(i + " ");
         }
+        
         
         System.out.println(); // buffer refresher
 
@@ -72,7 +76,7 @@ public class B3_SortingExp {
     
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = 0; j < data.length - i - 1; j++) {
-                if (data[j].compareTo(data[j + 1]) > 0) { // operator > atau < akan berpengaruh
+                if (data[j].compareTo(data[j + 1]) < 0) { // operator > atau < akan berpengaruh
                     String temp = data[j];
                     data[j] = data[j + 1];
                     data[j + 1] = temp;
